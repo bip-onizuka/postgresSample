@@ -10,18 +10,19 @@ default: &default
 
 development:
   <<: *default
+  database: d8to9ht565kti3
   username: btgnyctgunoick
   password: a0bc4006bf1cd952f5518eb1217eff1cc55660b1c57d89f458f4b088a2c558a1
-  host: 5432
+  host: ec2-18-214-211-47.compute-1.amazonaws.com
   port: 5432
-  Database: d8to9ht565kti3
 
 test:
   <<: *default
+  database: d8to9ht565kti3
   username: btgnyctgunoick
   password: a0bc4006bf1cd952f5518eb1217eff1cc55660b1c57d89f458f4b088a2c558a1
-  host: 5432
+  host: ec2-18-214-211-47.compute-1.amazonaws.com
   port: 5432
-  Database: d8to9ht565kti3
+  
 production:
   <<: *default
