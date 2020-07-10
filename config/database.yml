@@ -3,21 +3,25 @@ default: &default
   adapter: postgresql
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
   username: postgres
   password: 0N1namak0
   host: localhost
   port: 5432
 
-
-
 development:
   <<: *default
-  database: postgresSample_development
+  username: btgnyctgunoick
+  password: a0bc4006bf1cd952f5518eb1217eff1cc55660b1c57d89f458f4b088a2c558a1
+  host: 5432
+  port: 5432
+  Database: d8to9ht565kti3
 
 test:
   <<: *default
-  database: postgresSample_test
-
+  username: btgnyctgunoick
+  password: a0bc4006bf1cd952f5518eb1217eff1cc55660b1c57d89f458f4b088a2c558a1
+  host: 5432
+  port: 5432
+  Database: d8to9ht565kti3
 production:
   <<: *default
