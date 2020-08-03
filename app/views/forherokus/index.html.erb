@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Forherokus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Textitem  c</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forherokus.each do |forheroku| %>
+      <tr>
+        <td><%= forheroku.textitem__c %></td>
+        <td><%= link_to 'Show', forheroku %></td>
+        <td><%= link_to 'Edit', edit_forheroku_path(forheroku) %></td>
+        <td><%= link_to 'Destroy', forheroku, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Forheroku', new_forheroku_path %>
